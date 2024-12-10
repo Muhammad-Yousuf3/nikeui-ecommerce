@@ -132,7 +132,7 @@ export default function Header() {
 
             {/* Mobile Nav Links */}
             <nav className="flex flex-col space-y-4 text-sm font-medium text-gray-700">
-              <Link href="./components/newandfeatured" className="hover:underline">New & Featured</Link>
+              <Link href="../components/newandfeatured" className="hover:underline">New & Featured</Link>
               <Link href="../components/men" className="hover:underline">Men</Link>
               <Link href="#" className="hover:underline">Women</Link>
               <Link href="#" className="hover:underline">Kids</Link>
