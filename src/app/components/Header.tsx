@@ -22,9 +22,9 @@ export default function Header() {
 
         {/* Utility Links (Hidden on very small screens if desired) */}
         <div className="hidden md:flex items-center space-x-2 text-gray-600">
-              <Link href="#" className="hover:underline whitespace-nowrap">Find a Store</Link>
+              <Link href="../components/store" className="hover:underline whitespace-nowrap">Find a Store</Link>
               <span>|</span>
-              <Link href="#" className="hover:underline whitespace-nowrap">Help</Link>
+              <Link href="../components/help" className="hover:underline whitespace-nowrap">Help</Link>
               <span>|</span>
               <Link href="#" className="hover:underline whitespace-nowrap">Join Us</Link>
               <span>|</span>
@@ -142,8 +142,8 @@ export default function Header() {
 
             {/* Additional Links - could show/hide as needed */}
             <div className="mt-8 border-t pt-4 text-sm text-gray-600">
-              <Link href="#" className="block hover:underline mb-2">Find a Store</Link>
-              <Link href="#" className="block hover:underline mb-2">Help</Link>
+              <Link href="../components/store" className="block hover:underline mb-2">Find a Store</Link>
+              <Link href="../components/help" className="block hover:underline mb-2">Help</Link>
               <Link href="#" className="block hover:underline mb-2">Join Us</Link>
               <Link href="../components/signin" className="block hover:underline mb-2">Sign In</Link>
             </div>
