@@ -1,21 +1,15 @@
 import Image from 'next/image'
 import SnkrHeader from '../SnkrHeader'
+import {products} from '@/app/components/snkrProduct'
+import Link from 'next/link'
+
 
 export default function Home() {
 
   
 
   // Products - Replace these placeholder images & data with real info
-  const products = [
-    {id:1, src:"/snkr/snkr1.jpeg", alt:"Product 1"},
-    {id:2, src:"/snkr/snkr2.jpeg", alt:"Product 2"},
-    {id:3, src:"/snkr/snkr3.jpeg", alt:"Product 3"},
-    {id:4, src:"/snkr/snkr4.jpeg", alt:"Product 4"},
-    {id:5, src:"/snkr/snkr5.jpeg", alt:"Product 5"},
-    {id:6, src:"/snkr/snkr6.jpeg", alt:"Product 6"},
-    {id:7, src:"/snkr/snkr7.jpeg", alt:"Product 7"},
-    {id:8, src:"/snkr/snkr8.jpeg", alt:"Product 8"},
-  ]
+
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -27,13 +21,11 @@ export default function Home() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {products.map(product => (
             <div key={product.id} className="bg-gray-100 aspect-square flex items-center justify-center">
-              <Image 
-                src={product.src} 
-                alt={product.alt}
-                width={200}
-                height={200}
-                className="object-contain"
-              />
+             <Link href={`./snkrproduct/${product.id}`}>
+                  
+                  <Image src={product.src} alt={'product'} width='200' height='200'></Image>
+                 
+               </Link>
             </div>
           ))}
         </div>

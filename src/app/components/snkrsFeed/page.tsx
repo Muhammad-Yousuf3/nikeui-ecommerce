@@ -14,7 +14,7 @@ export default function Home() {
     {id:5, src:"/snkr/snkr5.jpeg", alt:"Product 5"},
     {id:6, src:"/snkr/redstyle.png", alt:"Product 6"},
     {id:7, src:"/snkr/snkr7.jpeg", alt:"Product 7"},
-    {id:8, src:"/snkr/blueshoe.png", alt:"Product 8",text:"Blue"},
+    {id:8, src:"/snkr/blueshoe.png", alt:"Product 8"},
   ]
 
   return (
@@ -34,7 +34,6 @@ export default function Home() {
                 height={350}
                 className="object-contain"
               />
-              <p>{product.text}</p>
             </div>
           ))}
         </div>
